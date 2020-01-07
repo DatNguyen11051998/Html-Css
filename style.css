@@ -1,0 +1,286 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+header {
+	height: 70px;
+	background: #4B37E2;
+	display: flex;
+	line-height: 70px;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	padding: 0 70px;
+}
+header #logo {
+	margin-top: 10px;
+}
+#search {
+	width: 72%;
+	padding-left: 100px;
+}
+#search input {
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	padding-left: 20px;
+	transition: 1s;
+	outline: none;
+}
+#search input:hover {
+	width: 250px;
+}
+#search button {
+	width: 80px;
+	border-radius: 5px;
+	height: 30px;
+	background: white
+}
+#cart {
+	position: relative;
+	color: white;
+}
+#cart span {
+	width: 40px;
+	height: 40px;
+	background: #D73249;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	left: 42px;
+	top: 16px;
+	
+}
+nav {
+	color: white;
+	background: #D73249;
+	
+}
+nav ul {
+	height: 100%;  
+	line-height: 40px;
+	display: flex;
+	padding:0 70px;
+}
+nav ul li {
+	width: 90px;
+	list-style: none;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+}
+
+nav ul li:hover {
+	background: grey;
+}
+nav ul li a {
+	color: white;
+}
+#menu {
+	color: white;
+	background: #D73249;
+	display: none;
+}
+#menu ul {
+	height: 100%;
+	line-height: 40px;
+	width: 300px;
+	
+}
+#menu ul li {
+	list-style: none;
+	text-decoration: none;
+	margin: 0 30px;
+}
+#menu ul li a {
+	color: white;
+}
+#menu ul li a:hover {
+	color: white;
+}
+#to {
+	padding: 10px 70px 0 70px;
+	display: flex;
+	background-color:#E3D8D8;
+}
+#content h2 {
+	margin: 20px 0 20px 10px;
+}
+#content #banner img {
+	width: 890px;
+}
+.product {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+.product-items {
+	background-color: white;
+	width: 280px;
+	height: 388px;
+	text-align: center;
+	border: 1px solid #E1DADA;
+	border-radius: 5px;
+	box-shadow: 1px 1px 15px grey;
+}
+.product-items img {
+	width:150px;
+	height:220px;
+}
+.product-items p {
+	margin-top: 10px
+}
+.product-items button {
+	color: white;
+	margin-top: 10px;
+	width: 80px;
+	border-radius: 5px;
+	height: 30px;
+	background: #D73249
+}
+.product-items button a {
+	color: white;
+}
+.product-items:hover {
+	cursor: pointer;
+}
+.product-items:hover button {
+	background: yellow;
+	color: white;
+}
+.product-items span {
+	color: red;
+}
+.product-items:hover {
+	opacity: 0.5;
+}
+aside {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+aside div {
+	padding-bottom: 30px;
+}
+footer {
+	background-color: grey;
+}
+footer p {
+	text-align: center;
+	padding: 15px 0;
+}
+
+ @media screen and (max-width:1024px) {
+	
+	header  {
+		padding:0 100px
+	}
+	header #search {
+		width: 53%;
+	}
+	#content #banner img {
+		width: 100%;
+	}
+	#to {
+		padding: 0 10%;
+	}
+	aside {
+		display: none;
+	} 
+	 .product-items {
+		width: 238px;
+	} 
+ }  
+
+ @media screen and (min-width: 480px) and (max-width:768px){
+	 
+	#content #banner img {
+		 width: 100% !important;
+	 }
+	 nav {
+		display: none;
+	}
+	 #menu {
+		display: block;
+		 /* margin: 0 20px; */
+	 }
+	#to {
+		/* padding: 0 20px; */
+		display: inline-block;
+	 }
+	 .product {
+		 margin-right: 16px;
+	 }
+	 div .product-items {
+		 width: 180px;
+	 }
+	 .product-items button {
+		 margin-top: 5px;
+	 }
+	 header img {
+		 margin-left: -60px;
+	 }
+	 aside {
+		 display: none;
+	 }
+ }
+ @media screen and (max-width:480px){
+	#content #banner img {
+		width: 284px;
+	}
+	header #logo h1 {
+		margin-left: -44px;
+	}
+	header #search {
+		display: none;
+	}
+	header #cart {
+		margin-left: 20px;
+	}
+	nav {
+		display: none;
+	}
+	#to {
+		padding: 0 10%;
+	}
+	 #menu {
+		display: block;
+		 /* margin: 0 20px; */
+	 }
+	 aside {
+		display: none;
+	}
+ }
+ @media screen and (max-width:415px){
+	header #cart {
+		margin-left: 80px;
+	}
+	#content {
+		padding: 0 8%;
+	}
+ }
+ @media screen and (max-width:377px) {
+	header #cart {
+		margin-left: 30px;
+	}
+ }
+ @media screen and (max-width:363px){
+	 
+	 #menu {
+		 padding:0 10%;
+		
+	 }
+	 header #cart {
+		 margin-left: 40px;
+	 }
+	 #content {
+		 padding: 0 0%;
+	 }
+ }
